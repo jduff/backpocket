@@ -1,4 +1,4 @@
-module Kitchensink
+module Backpocket
   module ActionView
     module EscapeJavascriptAlias
       def self.included(base)

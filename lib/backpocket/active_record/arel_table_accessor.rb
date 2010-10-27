@@ -1,4 +1,4 @@
-module Kitchensink
+module Backpocket
   module ActiveRecord
     module ArelTableAccessor
       def self.included(base)

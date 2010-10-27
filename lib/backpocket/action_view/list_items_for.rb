@@ -11,7 +11,7 @@
 # <li><a href="/articles/2">Article #2</a></li>
 # <li class="last"><a href="/articles/1">Article #1</a></li>
 
-module Kitchensink
+module Backpocket
   module ActionView
     module ListItemsFor
       def list_items_for(collection, opts = {}, &block)

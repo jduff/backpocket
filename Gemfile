@@ -1,4 +1,4 @@
 source :gemcutter
 
-# Specify your gem's dependencies in kitchensink.gemspec
+# Specify your gem's dependencies in backpocket.gemspec
 gemspec
