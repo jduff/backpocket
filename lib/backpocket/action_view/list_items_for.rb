@@ -17,15 +17,17 @@ module Backpocket
       def list_items_for(collection, opts = {}, &block)
         opts.reverse_merge!(:first_class => "first", :last_class => "last")
 
-        concat(collection.map { |item|
+        collection.collect! do |item|
           html_class = [
             opts[:class],
             (opts[:first_class] if item == collection.first),
             (opts[:last_class] if item == collection.last)
           ]
 
-          content_tag :li, capture(item, &block), :class => html_class.compact * " "
-        }.join)
+          content_tag(:li, capture(item, &block), :class => html_class.compact * " ")
+        end
+
+        collection.join.html_safe
       end
     end
   end
